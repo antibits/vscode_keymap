@@ -1,0 +1,53 @@
+{
+    "terminal.integrated.rendererType": "dom",
+    "go.alternateTools": {
+        "gopls": "gopls"
+    },
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true,
+        "rename": true,
+        "goToDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "goToTypeDefinition": true,
+        "goToImplementation": true,
+        "documentSymbols": true,
+        "workspaceSymbols": true,
+        "findReferences": true,
+        "diagnostics": true,
+        "documentLink": true
+    },
+    "go.lintFlags": ["--enable-all", "--new"],
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "go.autocompleteUnimportedPackages": true,
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 1000,
+            "maxArrayValues": 64,
+            "maxStructFields": -1
+        },
+        "apiVersion": 2,
+        "showGlobalVariables": true
+    },
+    "files.autoSave": "off",
+    "go.languageServerFlags": [
+        "-rpc.trace",
+        "serve",
+        "--debug=localhost:6060",
+    ],
+    "go.gopath": "/opt/wkspace/go",
+    "go.goroot": "/usr/lib/go",
+    "go.docsTool": "godoc",
+    "go.lintTool": "golint",
+    "go.formatTool": "gofmt",
+    "go.useLanguageServer": true
+}
